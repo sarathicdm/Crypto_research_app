@@ -32,7 +32,6 @@ class CoinListItem extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           child: Row(
             children: [
-              // Coin image
               ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: coin.image.isEmpty
@@ -47,7 +46,6 @@ class CoinListItem extends StatelessWidget {
                       ),
               ),
               const SizedBox(width: 12),
-              // Name + symbol
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,7 +62,6 @@ class CoinListItem extends StatelessWidget {
                   ],
                 ),
               ),
-              // Price + change
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -89,7 +86,6 @@ class CoinListItem extends StatelessWidget {
                 ],
               ),
               const SizedBox(width: 8),
-              // Favourite button
               GestureDetector(
                 onTap: onFavouriteTap,
                 child: Icon(
