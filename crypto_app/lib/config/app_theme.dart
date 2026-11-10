@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  // Brand colors
   static const Color background = Color(0xFF0D1117);
   static const Color surface = Color(0xFF161B22);
   static const Color card = Color(0xFF1C2128);

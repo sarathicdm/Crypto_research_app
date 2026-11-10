@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 import '../config/api_config.dart';
 
-// A simple exception class so the Repository can show meaningful messages.
 class ApiException implements Exception {
   final String message;
   ApiException(this.message);

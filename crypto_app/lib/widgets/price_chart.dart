@@ -5,7 +5,7 @@ import '../models/chart_model.dart';
 
 class PriceChart extends StatelessWidget {
   final ChartModel chart;
-  final bool isPositive; // determines line color
+  final bool isPositive;
 
   const PriceChart({super.key, required this.chart, required this.isPositive});
 
@@ -25,7 +25,6 @@ class PriceChart extends StatelessWidget {
     final lineColor = isPositive ? AppTheme.positive : AppTheme.negative;
     final minY = chart.points.map((p) => p.price).reduce((a, b) => a < b ? a : b);
     final maxY = chart.points.map((p) => p.price).reduce((a, b) => a > b ? a : b);
-    // Add 2% padding so the line doesn't touch the edges
     final padding = (maxY - minY) * 0.02;
 
     return LineChart(

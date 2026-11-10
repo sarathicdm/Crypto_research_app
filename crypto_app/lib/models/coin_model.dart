@@ -34,7 +34,6 @@ class CoinModel {
       image: json['image'] is Map
           ? ((json['image'] as Map)['large'] as String? ?? '')
           : json['image'] as String? ?? '',
-      // num covers both int and double coming from JSON
       currentPrice: (json['current_price'] as num?)?.toDouble() ?? 0.0,
       marketCap: (json['market_cap'] as num?)?.toDouble() ?? 0.0,
       totalVolume: (json['total_volume'] as num?)?.toDouble() ?? 0.0,

@@ -180,7 +180,6 @@ class _MarketScreenState extends ConsumerState<MarketScreen> {
 }
 
 
-// Simulated sparkline data — descending for market cap (negative), ascending for volume (positive)
 const _capPoints  = [100.0, 98.0, 97.0, 95.0, 93.0, 91.0, 90.0, 88.0, 87.0, 86.0];
 const _volPoints  = [60.0,  62.0, 61.0, 64.0, 66.0, 68.0, 70.0, 73.0, 75.0, 78.0];
 
